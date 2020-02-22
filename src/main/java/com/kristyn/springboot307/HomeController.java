@@ -21,7 +21,7 @@ public class HomeController {
         employee.setLaptop(laptop);
         employeeRepository.save(employee);
 
-        model.addAttribute("employeees", employeeRepository.findAll());
+        model.addAttribute("employees", employeeRepository.findAll());
         return "index";
     }
 }

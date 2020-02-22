@@ -10,8 +10,9 @@ public class Laptop {
     private String brand;
     private String model;
 
-    @OneToMany(mappedBy = "laptop")
+    @OneToOne(mappedBy = "laptop")
     private Employee employee;
+
 
     public Laptop() {
     }
@@ -48,3 +49,4 @@ public class Laptop {
         this.employee = employee;
     }
 }
+

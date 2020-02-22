@@ -10,7 +10,7 @@ public class Employee {
     private String name;
     private String ssn;
 
-    @OneToMany(cascade = CascadeType.ALL)
+    @OneToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "laptop_id")
     private Laptop laptop;
 
